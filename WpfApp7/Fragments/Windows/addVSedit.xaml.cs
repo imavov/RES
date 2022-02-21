@@ -42,6 +42,7 @@ namespace WpfApp7.Fragments.Windows
             comboBoxStatus.ItemsSource = DBHelper.DBHelper.GetContext().Status.ToList();
 
             Id = id;
+
         }
 
         
