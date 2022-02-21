@@ -37,6 +37,7 @@ namespace WpfApp7.Fragments.Windows
                 user = DBHelper.DBHelper.GetContext().UserData.FirstOrDefault(u => u.ID == id);
                 DataContext =user;
                 Title = "Редактировать";
+                
             }
             comboBoxRole.ItemsSource = DBHelper.DBHelper.GetContext().Role.ToList();
             comboBoxStatus.ItemsSource = DBHelper.DBHelper.GetContext().Status.ToList();
